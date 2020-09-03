@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 <body>
     <a href="http://localhost:4000/calculator.php">Homepage</a>
     <br><br>
-    <form action="calculator.php" method="get">
+    <form action="calculator.php" method="post">
         Number 1 : <input type="number" name="num1" placeholder="enter number">
         <br><br>
         Number 2 : <input type="number" name="num2" placeholder="enter number">
@@ -17,8 +17,9 @@
     </form>
     Answer: 
     <?php
-        $num1=$_GET["num1"];
-        $num2=$_GET["num2"];
+        $a=array();
+        $num1=$_POST["num1"];
+        $num2=$_POST["num2"];
         echo $num1+$num2;
     ?>
 </body>
