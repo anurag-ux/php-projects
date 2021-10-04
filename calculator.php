@@ -13,6 +13,8 @@
         <br><br>
         Number 2 : <input type="number" name="num2" placeholder="enter number">
         <br><br>
+        Number 3 : <input type="number" name="num3" placeholder="enter number">
+        <br><br>
         <input type="submit">
     </form>
     Answer: 
@@ -20,7 +22,8 @@
         $a=array();
         $num1=$_POST["num1"];
         $num2=$_POST["num2"];
-        echo $num1+$num2;
+        $num3=$_POST["num3"];
+        echo $num1+$num2+$num3;
     ?>
 </body>
 </html>
