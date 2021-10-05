@@ -15,6 +15,7 @@
     <?php
         $username=$_POST["username"];
         $password=$_POST["password"];
+        $fullname=$_POST["full name"];
         echo("$username");
     ?>
 </body>
